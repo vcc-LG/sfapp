@@ -10,3 +10,7 @@ services:
       - mongo
   mongo:
     image: mongo
+  mongo-seed:
+      build: mongo-seed/.
+      links:
+          - mongo

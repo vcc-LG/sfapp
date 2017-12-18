@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "5a383c77c376b0001c55c666",
+        "name": "Leo Garcia",
+        "username": "myBrandNewUsername",
+        "email": "newemail@clart.com",
+        "__v": 0,
+        "createdDate": "2017-12-18T22:08:55.977Z"
+    },
+    {
+        "_id": "5a3840574c299b001c078bed",
+        "name": "Connor S. Davies",
+        "username": "MrSafeDawgNEW",
+        "email": "connor_new@email.com",
+        "__v": 0,
+        "createdDate": "2017-12-18T22:25:27.319Z"
+    }
+]
