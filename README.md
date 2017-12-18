@@ -4,27 +4,27 @@ Following [this](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in
 ## Basic setup
 - Install Docker, MongoDB, npm
 - Make a new directory
-```
-mkdir sfapi
-```
+  ```
+  mkdir sfapi
+  ```
 - Initialise project
-```
-npm init -y
-```
+  ```
+  npm init -y
+  ```
 - Install dependencies
-```
-npm install express nodemon body-parser mongoose --save
-```
+  ```
+  npm install express nodemon body-parser mongoose --save
+  ```
 - Create `server.js`. Boilerplate code:
-```javascript
-var express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000;
+  ```js
+  var express = require('express'),
+    app = express(),
+    port = process.env.PORT || 3000;
 
-app.listen(port);
+  app.listen(port);
 
-console.log('RESTful API server started on: ' + port);
-```
+  console.log('RESTful API server started on: ' + port);
+  ```
 - Create `api/routes`, `api/models`, `api/controllers`.
 - Create dB scheme in `api/models/userModel.js`.
 - Create request routes in `api/routes/userRoutes.js`.
@@ -45,4 +45,10 @@ COPY . /app
 EXPOSE 8080
 CMD ["npm", "start"]
 ```
-- Create `docker-compose.yml` to launch the API and a MongoDB instance in two separate containers:
+- Create `.dockerignore` file with:
+```Docker
+node_modules
+npm-debug.log
+```
+- Create `docker-compose.yml` to launch the API and a MongoDB instance in two separate containers.
+- Run `docker-compose up --build`
