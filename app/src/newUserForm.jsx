@@ -53,6 +53,7 @@ class NewUserForm extends React.Component {
           noValidate
           className={displayErrors ? 'displayErrors' : ''}
          >
+         <ul>
           <label htmlFor="username">Username:</label>
           <input
             id="username"
@@ -61,10 +62,12 @@ class NewUserForm extends React.Component {
             data-parse="none"
             required
           />
-
+</ul>
+<ul>
           <label htmlFor="email">Email:</label>
           <input id="email" name="email" type="text" required />
-
+</ul>
+<ul>
           <label htmlFor="name">Name:</label>
           <input
             id="name"
@@ -73,8 +76,8 @@ class NewUserForm extends React.Component {
             data-parse="none"
             required
           />
-
-        <button>Create user</button>
+</ul>
+        <button class="button">Create user</button>
         </form>
 
 
